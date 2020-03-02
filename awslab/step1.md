@@ -9,7 +9,7 @@
 
 	`aws configure`{{execute}}
 
-  -  Please enter the following details
+   Please enter the following details
 
   -	AWS Access Key ID [None]:
   -	AWS Secret Access Key [None]:
