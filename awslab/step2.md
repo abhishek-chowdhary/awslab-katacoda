@@ -18,7 +18,7 @@
 
 4. After the file is created add the following data into it :
 
-**
+`
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Role and Policy
 Resources:
@@ -51,5 +51,4 @@ Outputs:
     Value: !GetAtt CommonRole.Arn 
     Export:
       Name: CommonRole
-
-**
+`{{copy}}
