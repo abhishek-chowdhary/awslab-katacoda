@@ -1,4 +1,1 @@
-
-
-
-	** Congratulation you have successfully completed this lab exercise. **
+** Congratulation you have successfully completed this lab exercise. **
