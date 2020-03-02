@@ -1,13 +1,13 @@
 1. Let's create our last cloudformation template.
 
-	Filename - s3_lambda_invoke.yaml
-	Reason for creating this file - It will create a S3 bucket where we will upload our artifacts and also create a lambda invoke permission so that s3 event can trigger lambda function on file upload event.
+	- Filename - s3_lambda_invoke.yaml
+	- Reason for creating this file - It will create a S3 bucket where we will upload our artifacts and also create a lambda invoke permission so that s3 event can trigger lambda function on file upload event.
 	
-	You can create file either using vi editor in termial using this command `vi s3_lambda_invoke.yaml`{{execute}} or by creating a new file in editor with s3_lambda_invoke.yaml
+   You can create file either using vi editor in termial using this command `vi s3_lambda_invoke.yaml`{{execute}} or by creating a new file in editor with s3_lambda_invoke.yaml
 
 2. After the file is created add the following data into it :
 
-**
+```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: S3 bucket 
 Parameters:
@@ -40,4 +40,4 @@ Outputs:
     Value: !GetAtt S3Bucket.Arn 
     Export:
       Name: S3Bucket
-**
+```

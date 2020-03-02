@@ -1,13 +1,13 @@
 1. Let's create our third cloudformation template.
 
-	Filename - lambda.yaml
-	Reason for creating this file - It will create a lambda function which will execute our logic to read json from s3 bucket and update its entry into the dynamodb table.
+	- Filename - lambda.yaml
+	- Reason for creating this file - It will create a lambda function which will execute our logic to read json from s3 bucket and update its entry into the dynamodb table.
 	
-	You can create file either using vi editor in termial using this command `vi lambda.yaml`{{execute}} or by creating a new file in editor with lambda.yaml
+   You can create file either using vi editor in termial using this command `vi lambda.yaml`{{execute}} or by creating a new file in editor with lambda.yaml
 
 2. After the file is created add the following data into it :
 
-**
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Lambda function
 Resources:
@@ -42,4 +42,4 @@ Outputs:
     Value: !GetAtt LambdaFunction.Arn
     Export:
       Name: deploylambda
-**
+```
