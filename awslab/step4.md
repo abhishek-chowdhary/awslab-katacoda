@@ -14,9 +14,9 @@ Resources:
   LambdaFunction: 
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: deploy      
+      FunctionName: deploy                       #specify lambda name
       Handler: index.lambda_handler
-      Role: !ImportValue CommonRole
+      Role: !ImportValue CommonRole              #specify role name exported
       Code:
         ZipFile: !Sub |
           import json
@@ -33,7 +33,7 @@ Resources:
             table.put_item(Item=jsonDict)
             return {
               'statusCode': 200,
-              'body': json.dumps('Hello from Lambda!')
+              'body': json.dumps('Success!')
             }
       Runtime: python3.6
 
@@ -41,5 +41,5 @@ Outputs:
   LambdaFunctionArn:
     Value: !GetAtt LambdaFunction.Arn
     Export:
-      Name: deploylambda
+      Name: deploylambda                       #specify lambda export name
 ```

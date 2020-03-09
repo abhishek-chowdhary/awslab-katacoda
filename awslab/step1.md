@@ -18,9 +18,9 @@
 
 3. After configuring the awscli , please validate if its working fine by running the following command :
 	
-	`aws s3 ls`{{execute}}
+	`aws --version && aws s3 ls`{{execute}}
 
-   - It will list the s3 bucket present in the account.
+   - It will list the aws cli version and the s3 bucket present in the account.
 
 4. Cloning the awslab material git repository .
 

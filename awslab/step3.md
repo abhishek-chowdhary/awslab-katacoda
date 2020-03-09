@@ -17,7 +17,7 @@ Resources:
   Employeetable: 
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: employeetable
+      TableName: employeetable    #specify table name
       AttributeDefinitions: 
         - AttributeName: "empid"
           AttributeType: "S"

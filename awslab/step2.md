@@ -1,6 +1,6 @@
 1. Now, we have cloned the repository. Let's create a new directory inside the cloned repository .
 
-	`cd awslab ; mkdir infrastructure`{{execute}}
+	`mkdir infrastructure; cd infrastructure`{{execute}}
 
 2. What all we will be creating as a part of this exercise:
 
@@ -25,7 +25,7 @@ Resources:
   CommonRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: commonrole
+      RoleName: commonrole          #specify role name
       AssumeRolePolicyDocument:
         Version: 2012-10-17
         Statement:
@@ -36,7 +36,7 @@ Resources:
             Action:
               - 'sts:AssumeRole'
       Policies: 
-        - PolicyName: commonPolicy
+        - PolicyName: commonPolicy   #specify policy anme
           PolicyDocument:
             Version: 2012-10-17
             Statement:
@@ -50,5 +50,5 @@ Outputs:
   CommonRoleArn:  
     Value: !GetAtt CommonRole.Arn 
     Export:
-      Name: CommonRole
+      Name: CommonRole               #specify export name
 ```

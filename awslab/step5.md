@@ -39,5 +39,5 @@ Outputs:
   S3BucketArn:  
     Value: !GetAtt S3Bucket.Arn 
     Export:
-      Name: S3Bucket
+      Name: S3Bucket                    #specify bucket export name
 ```
