@@ -3,7 +3,12 @@
 1. Update the current packages and installing awscli using apt-get command
 	
 	`apt-get update`{{execute}}
-	`apt-get install awscli -y`{{execute}}
+        `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && sudo ./aws/install`{{execute}}
+	`export PATH=$PATH:/usr/local/bin`{{execute}}
+   
+   Check the aws cli version :
+       
+       `aws --version`
 
 2. Configuring the aws cli
 
@@ -18,7 +23,6 @@
 
 3. After configuring the awscli , please validate if its working fine by running the following command :
 	
-	`aws --version && aws s3 ls`{{execute}}
+	`aws s3 ls`{{execute}}
 
-   - It will list the aws cli version and the s3 bucket present in the account.
-
+   - It will list the s3 bucket present in the account.

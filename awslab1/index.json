@@ -1,6 +1,6 @@
 {
   "title": "Static website hosting on S3 using aws cli",
-  "description": "Setting up an S3 bucket website"
+  "description": "Setting up an S3 bucket website",
   "time": "1 hour",
   "details": {
     "steps": [

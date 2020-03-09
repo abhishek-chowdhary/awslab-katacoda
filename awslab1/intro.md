@@ -7,4 +7,3 @@ Creating an environment with the following services :
 
 ** Create a S3 bucekt and attach a policy to the bucket to allow public access. Upload html file to S3 bucket.
 
-![Architecture Logo](assets/awslab1.png)
