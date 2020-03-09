@@ -29,7 +29,7 @@ Resources:
             json_object = s3_client.get_object(Bucket=bucket,Key=json_file_name)
             jsonFileReader = json_object['Body'].read()
             jsonDict = json.loads(jsonFileReader)
-            table = dynamodb.Table('employeetable')
+            table = dynamodb.Table('employeetable')  #specify table name 
             table.put_item(Item=jsonDict)
             return {
               'statusCode': 200,

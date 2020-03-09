@@ -12,7 +12,8 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: S3 bucket 
 Parameters:
   BucketName: 
-    Type: String 
+    Type: String
+    Default: awslabbucket1 
 Resources:
   S3Bucket: 
     Type: "AWS::S3::Bucket"
