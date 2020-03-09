@@ -6,8 +6,7 @@
 
 	- iam.yaml
 	- dynamodb.yaml
-	- lambda.yaml
-	- s3_lambda_invoke.yaml
+	- s3_lambda.yaml
 
 3. Let's create our first cloudformation template.
 
