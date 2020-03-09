@@ -10,7 +10,7 @@
 
    Before executing below line , create a variavle with name 'bucketname' and set it value. " bucketname=your-s3-bucket-name "
 
-  	- `aws cloudformation deploy --stack-name s3_lambda_invoke-stack --template-file ./s3_lambda.yaml --capabilities CAPABILITY_NAMED_IAM --parameter-overrides ${bucketname}`{{execute}}
+  	- `aws cloudformation deploy --stack-name s3-lambda-stack --template-file ./s3_lambda.yaml --capabilities CAPABILITY_NAMED_IAM --parameter-overrides bucketname=${bucketname}`{{execute}}
 
 
 
