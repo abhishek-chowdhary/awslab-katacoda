@@ -2,7 +2,7 @@
 
 1. Now we have are infrastructure up and ready. Let's test if it works fine.
 
-2. Upload a json file in S3 bucket .
+2. Upload a json file in S3 bucket.
 
 3. Then check the items tab inside dynamodb table , if it contains the data present in json file or not. 
 

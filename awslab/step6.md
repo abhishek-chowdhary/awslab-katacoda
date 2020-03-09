@@ -6,10 +6,8 @@
 
 	- `aws cloudformation validate-template --template-body file://iam.yaml`{{execute}}
 
-	- `aws cloudformation validate-template --template-body file://dynamodb.yaml`{{execute}}
+	- `aws cloudformation validate-template --template-body file://dynamodb.yaml`{{execute}
 
-	- `aws cloudformation validate-template --template-body file://lambda.yaml`{{execute}}
-
-	- `aws cloudformation validate-template --template-body file://s3_lambda_invoke.yaml`{{execute}}
+	- `aws cloudformation validate-template --template-body file://s3_lambda.yaml`{{execute}}
 
 	

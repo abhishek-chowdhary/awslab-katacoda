@@ -14,9 +14,9 @@ Resources:
   LambdaFunction: 
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: deploy                       #specify lambda name
+      FunctionName: deploy                 #specify lambda name
       Handler: index.lambda_handler
-      Role: !ImportValue CommonRole              #specify role name exported
+      Role: !ImportValue CommonRole        #specify role name exported
       Code:
         ZipFile: !Sub |
           import json
@@ -41,5 +41,5 @@ Outputs:
   LambdaFunctionArn:
     Value: !GetAtt LambdaFunction.Arn
     Export:
-      Name: deploylambda                       #specify lambda export name
+      Name: deploylambda               #specify lambda export name
 ```
