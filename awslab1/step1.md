@@ -3,7 +3,8 @@
 1. Update the current packages and installing awscli using apt-get command
 	
 	`apt-get update`{{execute}}
-        `curl 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip' -o 'awscliv2.zip' && unzip awscliv2.zip && sudo ./aws/install`{{execute}}
+        `curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip`{{execute}}
+	`unzip awscliv2.zip && sudo ./aws/install`{{execute}}
 	`export PATH=$PATH:/usr/local/bin`{{execute}}
    
    Check the aws cli version :
