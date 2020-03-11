@@ -6,10 +6,10 @@
 	`curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip`{{execute}}        
 	`unzip awscliv2.zip && sudo ./aws/install`{{execute}}
 	`export PATH=$PATH:/usr/local/bin`{{execute}}
-		
-   Check the aws cli version :
+
+Check the aws cli version :
    
-       `aws --version`{{execute}}      
+   `aws --version`{{execute}}
 
 2. Configuring the aws cli
 
