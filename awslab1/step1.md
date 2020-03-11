@@ -9,7 +9,7 @@
    
    Check the aws cli version :
        
-       `aws --version`{{execute}}      
+     `aws --version`{{execute}}      
 
 2. Configuring the aws cli
 
