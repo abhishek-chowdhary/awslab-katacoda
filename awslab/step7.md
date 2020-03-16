@@ -6,9 +6,9 @@
 
 	- `aws cloudformation deploy --stack-name iam-stack --capabilities CAPABILITY_NAMED_IAM --template-file ./iam.yaml`{{execute}}
 
-	- `aws cloudformation deploy --stack-name dynamodb-stack --template-file ./dynamodb.yaml --parameter-overrides TableName=<TABLE_NAME>`{{execute}}
+	- `aws cloudformation deploy --stack-name dynamodb-stack --template-file ./dynamodb.yaml`{{execute}}
 
-  	- `aws cloudformation deploy --stack-name s3-lambda-stack --template-file ./s3_lambda.yaml --parameter-overrides bucketname=<S3_BUCKET_NAME>`{{execute}}
+  	- `aws cloudformation deploy --stack-name s3-lambda-stack --template-file ./s3_lambda.yaml --parameter-overrides BucketName=<S3_BUCKET_NAME>`{{execute}}
 
 
 
