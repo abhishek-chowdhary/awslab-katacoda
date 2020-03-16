@@ -10,9 +10,6 @@
 ```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: DynamoDb table 
-Parameters:
-  TableName: 
-    Type: String 
 Resources:
   Employeetable: 
     Type: AWS::DynamoDB::Table
