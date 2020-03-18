@@ -1,0 +1,29 @@
+{
+  "title": "Creating an ECR repoistory and pushing docker images to it.",
+  "description": "ECR repository creation using AWS cli command and build/push the docker image to it.",
+  "time": "1 hour",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      } 
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
