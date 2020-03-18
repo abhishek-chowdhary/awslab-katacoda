@@ -30,4 +30,4 @@
 
 4. Clone the repository containing application code :
 
-       `git clone https://github.com/abhishek-chowdhary/ecs-flask-app.git;cd ecs-flask-app`{{execute}}
+      `git clone https://github.com/abhishek-chowdhary/ecs-flask-app.git;cd ecs-flask-app`{{execute}}
