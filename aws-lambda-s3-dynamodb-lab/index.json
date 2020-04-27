@@ -1,6 +1,6 @@
 {
-  "title": "Serverless - Integrating AWS lambda with DynamoDB and S3",
-  "description": "Creating and configuring AWS lambda to trigger on S3 file upload event and store data to DynamoDb table which is present inside json object upload to S3 bucket.",
+  "title": "Serverless scenario",
+  "description": "Integrating AWS lambda with DynamoDB and S3.",
   "difficulty": "Beginner",
   "time": "1 hour",
   "details": {
