@@ -1,6 +1,6 @@
 {
   "title": "Building and Pushing images to ECR repository.",
-  "description": "ECR repository creation using AWS cli and build/push the docker image to it.",
+  "description": "ECR repository creation using AWS cli comamnd and build/push the docker image to it.",
   "time": "1 hour",
   "details": {
     "steps": [
