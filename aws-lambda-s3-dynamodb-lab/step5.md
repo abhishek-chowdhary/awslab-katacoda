@@ -21,7 +21,7 @@ Resources:
       NotificationConfiguration:
         LambdaConfigurations:
           - Event: s3:ObjectCreated:*
-            Function: !GetAtt deploylambda
+            Function: !GetAtt LambdaFunction.Arn
             Filter:
               S3Key:
                 Rules:
